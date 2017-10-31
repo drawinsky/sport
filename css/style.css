@@ -1,0 +1,241 @@
+html,body{
+    margin: 0;
+    font-family: "微軟正黑體";
+}
+main:after {
+    content:"";
+    display: block;
+    clear: both;
+}
+.float-left{
+    float: left;
+    margin: 0 5vw;
+}
+#function-div{
+    position: fixed;
+    background: white;
+    height: 100vh;
+    top: 0;
+    box-shadow: rgba(195, 222, 161, 0.6) 3px 0 20px 7px;    
+}
+#function-div img{
+    max-width: 180px;
+    width: 11vw;
+}
+#function-photo{
+    width: 80px;
+    height: 80px;
+    border: 1px solid gray;
+    border-radius: 50%;
+    margin: auto;
+    margin-top: 1vw;
+    margin-bottom: 2vw;
+
+    font-size: 2em;
+    font-family: 'Times New Roman', Times, serif;
+    color: gray;
+    line-height: 9vw;
+    text-align: center;
+}
+.function-btn{
+    position: relative;
+    height: 8vh;
+    text-align: center;
+}
+.function-btn a{
+    color: gray;
+    line-height: 8vh;
+    font-family: '微軟正黑體';
+    text-decoration: none;
+}
+.function-btn:hover,
+.function-btn:active{
+    border: 1px solid lightgray;
+    border-width: 1px 0 1px 5px;
+    box-sizing: border-box;
+}
+.function-btn a:hover,
+.function-btn a:active{
+    color: black;
+    text-decoration: none;
+}
+.signout-btn{
+    border: 1px solid gray;
+    border-radius: 15px;
+    padding: 0.2vw 1vw;
+    color: gray;
+}
+
+#content{
+    /* background:#E8FFE0;  */
+    float: right;
+    min-height: 93vh;
+    background: #f3ffef; /* Old browsers */
+    background: -moz-linear-gradient(-45deg, rgba(243, 255, 239, 0.2) 0%, #d9ffcc 100%); /* FF3.6-15 */
+    background: -webkit-linear-gradient(-45deg, rgba(243, 255, 239, 0.2) 0%,#d9ffcc 100%); /* Chrome10-25,Safari5.1-6 */
+    background: linear-gradient(135deg, rgba(243, 255, 239, 0.2) 0%,#d9ffcc 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#f3ffef', endColorstr='#d9ffcc',GradientType=1 ); /* IE6-9 fallback on horizontal gradient */    
+}
+.container-list{
+    margin: 10vh;
+    line-height: 3vh;
+}
+/* td,
+th {
+    padding: 1vh;
+} */
+#banner{
+    float: right;
+    background: black;
+}
+#banner-div{
+    background: black;
+    height: 7vh;
+    text-align: center;
+    font-size: 1em;
+    line-height: 2.5vh;
+    padding-top: 1vh;
+    color: #e0f4d1;
+}
+
+
+/* list-------------------------- */
+
+#Referee .row div{
+    border-right: 1px solid grey; 
+}
+
+#Referee h4{
+    text-align: center;
+}
+
+.container{
+    margin-top: 50px; 
+}
+
+table{
+    width: 100%;
+}
+input{
+    border:0 none;
+    border-bottom:1px solid grey;
+    width: 100%;
+    margin: 10px 0;
+    background: none;
+}
+select{
+    border:0 none;
+    border-bottom:1px solid grey;
+    width: 100%;
+    margin: 10px 0;
+    background: none;
+}
+
+
+/* list-02-------------------------- */
+
+.personal-info{
+    margin-top: 5vh;
+    margin-bottom: 5vh;
+}
+.personal-info>h3{
+    margin: 15px 6vw;
+}
+
+#Referee>div:nth-of-type(1)>div{
+    padding: 0 0 5vw 0;
+    box-shadow: 0px 25px 10px -15px #e0f4d1;
+}
+#personal-photo{
+    width: 9vw;
+    height: 9vw;
+    border: 1px solid gray;
+    border-radius: 50%;
+    margin: auto;
+    margin-top: 2vw;
+    margin-bottom: 2vw;
+
+    font-size: 2em;
+    font-family: 'Times New Roman', Times, serif;
+    color: gray;
+    line-height: 9vw;
+    text-align: center;
+}
+.photo-btn{
+    border: 1px solid gray;
+    border-radius: 15px;
+    padding: 0.2vw 2vw;
+    margin-left: 1.2vw;
+    color: gray;
+}
+.continue-btn{
+    border: 1px solid gray;
+    border-radius: 15px;
+    padding: 0.2vw 2vw;
+    margin-left: 44%;
+    color: gray;
+
+}
+
+
+/* RWD------------------------ */
+
+@media (max-width: 1200px) {
+    
+}
+
+
+@media (max-width: 992px) {
+    #function-div img {
+        width: 20vw;
+    }
+    #personal-photo {
+        width: 15vw;
+        height: 15vw;
+    }
+}
+
+@media (max-width: 768px) {
+    #personal-photo {
+        width: 20vw;
+        height: 20vw;
+    }
+    #Referee .row div {
+        border: 0;
+    }
+    #banner-div{
+        height: 15vh;
+    }
+}
+
+/* sm */
+@media (max-width: 576px) {
+    #function-div img {
+        width: 50vw;
+    }
+    #function-div{
+         position: relative;
+    }
+    #content{
+        width:100%;
+    }
+}
+@media (max-width: 320px) {
+    #personal-photo {
+        width: 50vw;
+        height: 50vw;
+    }
+    .photo-btn {
+        border: 1px solid gray;
+        border-radius: 15px;
+        padding: 0.2vw 15vw;
+        color: gray;
+    }
+    .personal-list{
+        margin-top: 8vw;
+    }
+    
+    }
+@media (max-width: 300px) {
+
+}
